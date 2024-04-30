@@ -1,3 +1,47 @@
+<!--Use the below code snippet to provide real time updates to the live chat plugin without the need of copying and paste each time to your website when changes are made via PBX-->
+<call-us-selector phonesystem-url="https://1150.3cx.cloud" party="hashtagsnapmagyarors"></call-us-selector>
+ 
+<!--Incase you don't want real time updates to the live chat plugin when options are changed, use the below code snippet. Please note that each time you change the settings you will need to copy and paste the snippet code to your website--> 
+<!--<call-us 
+phonesystem-url="https://1150.3cx.cloud" 
+style="position:fixed;font-size:16px;line-height:17px;z-index: 99999;--call-us-main-accent-color:#3397D4;--call-us-main-background-color:#ffffff;--call-us-plate-background-color:#0074f0;--call-us-plate-font-color:#E6E6E6;--call-us-main-font-color:#292929;--call-us-agent-bubble-color:#29292910;right: 20px; bottom: 20px;" 
+id="wp-live-chat-by-3CX" 
+minimized="true" 
+animation-style="fadein" 
+party="hashtagsnapmagyarors" 
+minimized-style="bubbleright" 
+allow-call="false" 
+allow-video="false" 
+allow-soundnotifications="true" 
+enable-mute="true" 
+enable-onmobile="true" 
+offline-enabled="true" 
+enable="true" 
+ignore-queueownership="false" 
+authentication="both" 
+operator-name="Utazás 24" 
+show-operator-actual-name="false" 
+aknowledge-received="true" 
+operator-icon="data:image/png;base64,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" 
+gdpr-enabled="false" 
+message-userinfo-format="both" 
+message-dateformat="both" 
+start-chat-button-text="Beszélgetés indítása!" 
+lang="browser" 
+button-icon-type="default" 
+invite-message="Szia! Miben segíthetünk?" 
+authentication-message="Kérjük add meg e-mail címed." 
+unavailable-message="Hoppá, munkatársaink jelenleg nem elérhetőek kérjük küldj nekünk e-mailt a termektamogatas@ügyfélszolgálatok.hu e-mail címre." 
+first-response-message="Köszönjük. Munkatársunk jelentkezéséig szíves türelmét kérjük." 
+greeting-visibility="both" 
+greeting-offline-visibility="none" 
+greeting-message="Szia! Segíthetünk valamiben?" 
+chat-delay="2000" 
+enable-direct-call="false" 
+enable-ga="false" 
+></call-us>--> 
+<script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" id="tcx-callus-js" charset="utf-8"></script>
+
 <html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="en"><head>
         <!-- meta data -->
         <meta charset="utf-8">
